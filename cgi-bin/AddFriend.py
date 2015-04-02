@@ -1,7 +1,7 @@
 username=form.getvalue("username")
 friend=form.getvalue("friend")
 
-with open("members") as members:
+with open("members.csv") as members:
 	memberslist=members.read().splitlines()
 	numLines=len(memberslist)
 	for i in range(len(memberslist)):
