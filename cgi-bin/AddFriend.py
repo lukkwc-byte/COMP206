@@ -1,8 +1,5 @@
-#username=form.getvalue("username")
-#friend=form.getvalue("friend")
-
-username="kevin"
-friend="wallace"
+username=form.getvalue("username")
+friend=form.getvalue("friend")
 
 with open("members") as members:
 	memberslist=members.read().splitlines()

@@ -21,14 +21,10 @@ void main(void){
 
 	printf("%s%c%c\n","Content-Type:text/html;charset=iso-8859-1",13,10);
 	if(Valid==1){
-		FILE *page=fopen("../SuccessfulLogin.html", "rt");
-		while((c=fgetc(page))!=EOF)putchar(c);
-		fclose(page);
+		SuccessLogin(User);
 	}
 	else{
-                FILE *page=fopen("../FailedLogin.html", "rt");
-                while((c=fgetc(page))!=EOF)putchar(c);
-                fclose(page);
+                FailLogin();
 	}
 }
 
@@ -54,4 +50,68 @@ int Validate(char* user, char* pass){
         }
         fclose(file);
 	return valid;
+}
+
+void FailLogin(){
+	printf("<html>");
+	printf("<head>");
+	printf("<title> Oh No!</title>");
+	printf("</head>");
+	printf("<body bgcolor=\"#c4d4af\">");
+	printf("<header>");
+	printf("<center>");
+	printf("<font color=\"#68a8ad\" size=\"4\">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font>");
+	printf("<h1><b>Failed Entry into the World of Statistics</b></h1>");
+	printf("<font color=\"#68a8ad\" size=\"4\">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font>");
+	printf("</center>");
+	printf("</header>");
+	printf("<section>");
+	printf("<center>");
+	printf("<h2> Oh no! We couldn't find your credential in our database.</h2>");
+	printf("<img src=\"https://teachertoolkitdotme.files.wordpress.com/2013/06/oh-no.jpg\">");
+	printf("<p> Click <a href=\"http://cs.mcgill.ca/~kluk6/\">here</a> to try again </p>");
+	printf("<footer>");
+	printf("<center>");
+	printf("<font color=\"#68a8ad\" size=\"4\">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font><br>");
+	printf("<font size=\"2\" face=\"verdana\"><b>Made by: Team TimBitz</b></font><br>");
+	printf("<font color=\"#68a8ad\" size=\"4\">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font>");
+	printf("</center>");
+	printf("</footer>");
+	printf("</center>");
+	printf("</section>");
+	printf("</body>");
+	printf("</html>");
+}
+
+void SuccessLogin(char* user){
+	printf("<html>");
+	printf("<head>");
+	printf("<title> World of Statistics</title>");
+	printf("</head>");
+	printf("<body bgcolor=\"#c4d4af\">");
+	printf("<header>");
+	printf("<center>");
+	printf("<font color=\"#68a8ad\" size=\"4\">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font>");
+	printf("<h1><b>The Beautiful World of Statistics</b></h1>");
+	printf("<font color=\"#68a8ad\" size=\"4\">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font>");
+	printf("</center>");
+	printf("</header>");
+	printf("<section>");
+	printf("<center>");
+	printf("<h2> Welcome back!</h2>");
+	printf("<img src=\"http://static.businessinsider.com/image/524fff1b69beddd602d59776/image.jpg\">");
+	printf("<p> Click below to re-enter the gawdly domain of applied maths! </p>");
+	printf("<form action=\"../cgi-bin/Feed.py\" method=POST>");
+	printf("<input type=\"hidden\" name=\"username\" value=%s>", user);
+	printf("<footer>");
+	printf("<center>");
+	printf("<font color=\"#68a8ad\" size=\"4\">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font><br>");
+	printf("<font size=\"2\" face=\"verdana\"><b>Made by: Team TimBitz</b></font><br>");
+	printf("<font color=\"#68a8ad\" size=\"4\">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font>");
+	printf("</center>");
+	printf("</footer>");
+	printf("</center>");
+	printf("</section>");
+	printf("</body>");
+	printf("</html>");
 }
