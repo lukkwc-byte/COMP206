@@ -1,4 +1,10 @@
+###########################################
+# Returns a list of members to be printed #
+###########################################
+
 def memberList(username):
+
+	listing = []
 
 	with open("members.csv") as members:
 		memberslist=members.read().splitlines()
@@ -6,7 +12,7 @@ def memberList(username):
 		for line in memberslist:
 			lineUser = line.split()[0]
 
-			if lineUser == username:
+			if lineUser != username:
+				listing.append(lineUser)
 
-				# PRINT THE USER
-				# ETC ETC ETC
+	return listing
