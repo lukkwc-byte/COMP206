@@ -1,8 +1,13 @@
 from listing import memberList
 from AddFriend import add
 from GetFeed import getFeed
+import cgi
 
 username=form.getvalue("username")
+
+if(form.getvalue("name") == "addfriend"):
+	add(form.getvalue("friend"))
+if(form.getvalue("name") == "poststatus"):
 
 memberlist = memberList()
 feedlist = getFeed()
@@ -40,7 +45,7 @@ print '''
 				<td align="justify">
 					<h5><input type="text" name="friend">
 					</h5></td>
-					<td align="justify"><input type="submit" value="submit">
+					<td align="justify"><input type="submit" value="Add">
 					</td>
 				</form>
 				<td>
@@ -52,9 +57,9 @@ print '''
 print username
 print '''
 ">
-					<td align="justify"><h5>Name:</h5></td><td><h5><input type="text" name="status"></h5></td>
+					<td align="justify"><h5>What's on your mind?</h5></td><td><h5><input type="text" name="status"></h5></td>
 					<td align="justify">
-						<input type="submit" value="submit">
+						<input type="submit" value="Post">
 					</td>
 				</tr>
 			</table>
