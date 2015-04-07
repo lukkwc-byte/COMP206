@@ -1,4 +1,4 @@
-def GetFeed():
+def getFeed():
 	Feedlist=[]
 	Users=[]
 	Messages=[]
