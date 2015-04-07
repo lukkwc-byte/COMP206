@@ -1,3 +1,10 @@
+from listing import memberList
+import AddFriend
+
+memberlist = memberList()
+
+
+print '''
 <html>
 <head>
 	<title> World of Statistics</title>
@@ -22,8 +29,10 @@
 		</tr>
 		<tr align="center">
 			<td>
-				ENTIRE MEMBER LIST GOES HERE
-				PLEASE INCLUDE NEWLINES!
+			'''
+for member in memberlist:
+	print member
+print '''
 			</td>
 			<td>
 				Message1
@@ -113,3 +122,4 @@
 	</footer>
 </body>
 </html>
+'''
