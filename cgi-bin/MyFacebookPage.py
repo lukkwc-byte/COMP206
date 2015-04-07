@@ -75,81 +75,21 @@ for member in memberlist:
 	print member
 print '''
 			</td>
-			<td>
-				Message1
-			</td>
 		</tr>
-		<tr align="center">
-			<td>
-				
-			</td>
-			<td>
-				Message2
-			</td>
-		</tr>
-		<tr align="center">
-			<td>
-				
-			</td>
-			<td>
-				Message3
-			</td>
-		</tr>
-		<tr align="center">
-			<td>
-				
-			</td>
-			<td>
-				Message4
-			</td>
-		</tr>
-		<tr align="center">
-			<td>
-				
-			</td>
-			<td>
-				Message5
-			</td>
-		</tr>
-		<tr align="center">
-			<td>
-				
-			</td>
-			<td>
-				Message6
-			</td>
-		</tr>
-		<tr align="center">
-			<td>
-				
-			</td>
-			<td>
-				Message7
-			</td>
-		</tr>
-		<tr align="center">
-			<td>
-				
-			</td>
-			<td>
-				Message8
-			</td>
-		</tr>
-		<tr align="center">
-			<td>
-				
-			</td>
-			<td>
-				Message9
-			</td>
-		</tr>
-		<tr align="center">
-			<td>
-				
-			</td>
-			<td>
-				Message10
-			</td>
+'''
+for i in range(10):
+	print '''
+		<tr align="justify">
+		<td>
+
+		</td>
+		<td>
+	'''
+	print ("%s : %s", feedlist[0][i], feedlist[1][i])
+	print '''
+		</td>
+	'''
+print '''
 		</tr>
 
 	</table>

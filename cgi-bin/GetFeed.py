@@ -21,5 +21,4 @@ def getFeed():
 			returnlist.append(Users)
 			returnlist.append(Messages)
 	return returnlist
-GetFeed()
 
