@@ -1,18 +1,18 @@
-def ReadFeed():
+def readFeed():
 	Feedlist=[]
 	with open("feed.csv") as feed:
         	Feedlist=feed.read().splitlines()
         return Feedlist
 
-def WriteFeed(lis):
+def writeFeed(lis):
 	Feed=open("feed.csv", "w")
 	for i in range(len(lis)):
 		Feed.write(lis[i]+"\n")
         	
-def ReadPosts():
+def readPost():
 	Users=[]
 	Messages=[]
-	Feedlist=GetFeed()
+	Feedlist=readFeed()
 	for i in range(len(Feedlist)):
                 line=Feedlist[i]
 		if i % 2 == 0:
@@ -30,10 +30,8 @@ def ReadPosts():
 		returnlist.append(Messages)
 	return returnlist
 
-def AddPost(user, message):
-	Feedlist=ReadFeed()
+def writePost(user, message):
+	Feedlist=readFeed()
 	Feedlist.append(user)
 	Feedlist.append(message)
-	WriteFeed(Feedlist)
-
-AddPost("kevin", "lololz")
+	writeFeed(Feedlist)
