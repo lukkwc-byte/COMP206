@@ -29,7 +29,7 @@ void main(void){
 }
 
 int Validate(char* user, char* pass){
-	char filename[8]="members";
+	char filename[8]="members.csv";
         char line[9999];
         int valid;
 
