@@ -43,6 +43,7 @@ if ($valid == 1){
     close $fh;
 
     print qq(
+
 <html>
 <head>
     <title> World of Statistics</title>
@@ -80,6 +81,7 @@ if ($valid == 1){
 
 } else {
     print qq(
+        
  <html>
 <head>
     <title> World of Statistics</title>
