@@ -3,7 +3,6 @@
 use CGI;
 use CGI::Carp qw(fatalsToBrowser);
 use strict;
-use warnings;
 
 print "Content-type: text/html\n\n";
 
@@ -102,7 +101,7 @@ if ($valid == 1){
     <section>
         <center>
             <p> Join the website that connects statistics enthusiasts together.</p>
-            <form name="register" action="cgi-bin/Registration.pl" method="post">
+            <form name="register" action="Registration.pl" method="post">
                 <br><br>
                 <h3><b>Sign up</b></h3>
                 <h6>Note: Spaces will be removed</h6>
