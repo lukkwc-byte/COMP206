@@ -11,6 +11,7 @@ username=form["username"].value
 
 if(os.getenv('HTTP_REFERER') == "http://cs.mcgill.ca/~kluk6/cgi-bin/MyFacebookPage.py"):
 	if(form.getvalue("name") == "addfriend"):
+		x = 0/0
 		add(username, form.getvalue("friend"))
 		print "Content-Type: text/html"
 		print 
