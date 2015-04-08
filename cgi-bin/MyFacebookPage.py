@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 # from listing import memberList
 # from AddFriend import add
 # from FeedLogic import readFeed, writeFeed, readPost, writePost
