@@ -5,7 +5,7 @@ use warnings;
 use Text::CSV;
 
 # KEVIN THIS IS FOR YOU
-my $relative_path_to_csv = "usr_info.csv";
+my $relative_path_to_csv = "members.csv";
 my $path_to_login = "http://cs.mcgill.ca/~kluk6/";
 # END KEVIN THIS IS FOR YOU
 
@@ -45,47 +45,22 @@ if ($valid == 1){
     print qq(
 
 <html>
-    <head>
-        <title> World of Statistics</title>
-        <style>
-            header{
-                background-color:68a8ad;
-                color:white;
-                text-align:center;
-                padding:0.5em;
-                clear: both;
-            }
-        
-            section {
-                background-color:c4d4af;
-                    text-align:left;
-                    padding:1em; 
-                font-family: verdana;    
-            }       
+<head>
+    <title> World of Statistics</title>
+</head>
 
-            body{
-                background-color: c4d4af;
-            }   
-    
-            footer{
-                position: fixed;
-                bottom:0.5em;
-                left: 0.5em;
-                right: 0.5em;
-                background-color:68a8ad;
-                color:black;
-                clear:both;
-                text-align:center;
-                padding:0.5em;
-                font-family:verdana;         
-            }               
-        </style>
-    </head>
-    
-    <body>
-        <header>
-            <center><h1 style="font-family:verdana"><b>World of Statistics</b></h1></center>
-        </header>
+<body bgcolor="#c4d4af">
+    <header>
+        <center>
+            <font color="#68a8ad" size="4">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font>
+            <br>
+            <h1>
+                <b>World of Statistics</b>
+            </h1>
+
+            <font color="#68a8ad" size="4">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font>
+        </center>
+    </header>
         
         <section>
             <center>
@@ -93,59 +68,36 @@ if ($valid == 1){
             </center>
         <section>
 
-        <h5>
-        <footer>
-            <center><p>Made by: Team TimBitz</p></center>
-        </footer>
-        </h5>
-    </body>
+    <footer>
+        <center>
+            <font color="#68a8ad" size="4">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font><br>
+            <font size="2" face="verdana"><b>Made by: Team TimBitz</b></font><br>
+            <font color="#68a8ad" size="4">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font>
+        </center>
+    </footer>
+</body>
 </html>
       );
 
 } else {
             print qq(
-            <html>
-    <head>
-        <title> World of Statistics</title>
-        <style>
-            header{
-                background-color:68a8ad;
-                color:white;
-                text-align:center;
-                padding:0.5em;
-                clear: both;
-            }
-        
-            section {
-                background-color:c4d4af;
-                    text-align:left;
-                    padding:1em; 
-                font-family: verdana;    
-            }       
+ <html>
+<head>
+    <title> World of Statistics</title>
+</head>
 
-            body{
-                background-color: c4d4af;
-            }   
-    
-            footer{
-                position: fixed;
-                bottom:0.5em;
-                left: 0.5em;
-                right: 0.5em;
-                background-color:68a8ad;
-                color:black;
-                clear:both;
-                text-align:center;
-                padding:0.5em;
-                font-family:verdana;         
-            }               
-        </style>
-    </head>
-    
-    <body>
-        <header>
-            <center><h1 style="font-family:verdana"><b>World of Statistics</b></h1></center>
-        </header>
+<body bgcolor="#c4d4af">
+    <header>
+        <center>
+            <font color="#68a8ad" size="4">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font>
+            <br>
+            <h1>
+                <b>World of Statistics</b>
+            </h1>
+
+            <font color="#68a8ad" size="4">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font>
+        </center>
+    </header>
         
         <section>
                 <center>
@@ -167,12 +119,14 @@ if ($valid == 1){
             </form>
         <section>
 
-        <h5>
-        <footer>
-            <center><p>Made by: Team TimBitz</p></center>
-        </footer>
-        </h5>
-    </body>
+    <footer>
+        <center>
+            <font color="#68a8ad" size="4">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font><br>
+            <font size="2" face="verdana"><b>Made by: Team TimBitz</b></font><br>
+            <font color="#68a8ad" size="4">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font>
+        </center>
+    </footer>
+</body>
 </html>
         );
 }
