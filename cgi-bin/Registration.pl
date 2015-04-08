@@ -81,7 +81,7 @@ if ($valid == 1){
       );
 
 } else {
-            print qq(
+    print qq(
  <html>
 <head>
     <title> World of Statistics</title>
