@@ -1,19 +1,19 @@
 #!/usr/bin/python
 
-# from listing import memberList
-# from AddFriend import add
-# from FeedLogic import readFeed, writeFeed, readPost, writePost
-# import cgi
+from listing import memberList
+from AddFriend import add
+from FeedLogic import readFeed, writeFeed, readPost, writePost
+import cgi
 
-# username=form.getvalue("username")
+username=form.getvalue("username")
 
-# if(form.getvalue("name") == "addfriend"):
-# 	add(username, form.getvalue("friend"))
-# if(form.getvalue("name") == "poststatus"):
-# 	writePost(username, form.getvalue("Post"))
+if(form.getvalue("name") == "addfriend"):
+	add(username, form.getvalue("friend"))
+if(form.getvalue("name") == "poststatus"):
+	writePost(username, form.getvalue("Post"))
 
-# memberlist = memberList(username)
-# feedlist = readPost()
+memberlist = memberList(username)
+feedlist = readPost()
 
 print "Content-Type: text/html"
 print 
@@ -40,7 +40,7 @@ print '''
 	<form name="addfriend" action="MyFacebookPage.py" method="post">
 		<input type="hidden" name="username" value="
 '''
-# print username
+print username
 print '''
 ">
 		<table align="center">
@@ -60,7 +60,7 @@ print '''
 				<form name="poststatus" action="MyFacebookPage.py" method="post">
 				<input type="hidden" name="username" value="
 '''
-# print username
+print username
 print '''
 ">
 					<td align="justify"><h5>What's on your mind?</h5></td><td><h5><input type="text" name="status"></h5></td>
@@ -76,30 +76,30 @@ print '''
 				<th> Member List </th>
 				<th align="justify"> 
 '''
-# print username
+print username
 print ''''s Feed </th>
 		</tr>
 		<tr align="center">
 			<td>
 '''
-# for member in memberlist:
-# 	print member
+for member in memberlist:
+	print member
 print '''
 			</td>
 		</tr>
 '''
-# for i in range(10):
-# 	print '''
-# 		<tr align="justify">
-# 		<td>
+for i in range(10):
+	print '''
+		<tr align="justify">
+		<td>
 
-# 		</td>
-# 		<td>
-# 	'''
-# 	print ("%s : %s", feedlist[0][i], feedlist[1][i])
-# 	print '''
-# 		</td>
-# 	'''
+		</td>
+		<td>
+	'''
+	print ("%s : %s", feedlist[0][i], feedlist[1][i])
+	print '''
+		</td>
+	'''
 print '''
 		</tr>
 
