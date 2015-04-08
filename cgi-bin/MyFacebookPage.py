@@ -8,10 +8,10 @@ import cgi
 form = cgi.FieldStorage()
 username=form["username"].value
 
-# if(form["name"].value == "addfriend"):
-# 	add(username, form["friend"].value)
-# if(form["name"].value == "poststatus"):
-# 	writePost(username, form["Post"].value)
+if(form["name"].value == "addfriend"):
+	add(username, form["friend"].value)
+if(form["name"].value == "poststatus"):
+	writePost(username, form["Post"].value)
 
 memberlist = memberList(username)
 feedlist = readPost()
