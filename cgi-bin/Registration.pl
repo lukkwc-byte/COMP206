@@ -1,4 +1,4 @@
-#!usr/bin/perl
+#!/usr/bin/perl
 
 use CGI;
 use CGI::Carp qw(fatalsToBrowser);
@@ -8,7 +8,7 @@ print "Content-type: text/html\n\n";
 
 # KEVIN THIS IS FOR YOU
 my $relative_path_to_csv = 'members.csv';
-my $path_to_login = "http://cs.mcgill.ca/~kluk6/";
+my $path_to_login = "http://cs.mcgill.ca/~kluk6/Welcome.html";
 # END KEVIN THIS IS FOR YOU
 
 my $cgi = new CGI;
@@ -43,7 +43,6 @@ if ($valid == 1){
     close $fh;
 
     print qq(
-
 <html>
 <head>
     <title> World of Statistics</title>
@@ -81,7 +80,7 @@ if ($valid == 1){
 
 } else {
     print qq(
-        
+
  <html>
 <head>
     <title> World of Statistics</title>
