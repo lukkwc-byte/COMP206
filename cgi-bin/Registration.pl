@@ -21,7 +21,7 @@ my $pwd = $cgi->param( 'password' );
 $pwd = '' unless $pwd;
 $pwd =~ tr/ //ds;
 
-print "Content-type: text/html\n\n";
+# print "Content-type: text/html\n\n";
 
 my $file = $relative_path_to_csv;
 my $valid = 1;
@@ -43,7 +43,6 @@ if ($valid == 1){
     close $fh;
 
     print qq(
-
 <html>
 <head>
     <title> World of Statistics</title>
