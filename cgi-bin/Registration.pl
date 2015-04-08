@@ -43,7 +43,7 @@ print "Content-type: text/html\n\n";
 #     print $fh  "$name $usr $pwd\n";
 #     close $fh;
 
-    print qq(
+print qq(
 <html>
 <head>
     <title> World of Statistics</title>
