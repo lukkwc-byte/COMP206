@@ -97,7 +97,7 @@ for i in range(10):
 		</td>
 		<td>
 	'''
-	print ("%s : %s", feedlist[0][i], feedlist[1][i])
+	print (feedlist[0][i] + " : " + feedlist[1][i])
 	print '''
 		</td>
 	'''
