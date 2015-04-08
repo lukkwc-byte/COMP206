@@ -14,7 +14,7 @@ if(os.getenv('HTTP_REFERER') == "http://cs.mcgill.ca/~kluk6/cgi-bin/MyFacebookPa
 		add(username, form.getvalue("friend"))
 		print "Content-Type: text/html"
 		print 
-		print "<html><head></head><body>"+form["username"].value)+form.getvalue("friend")+"</body></html>"
+		print "<html><head></head><body>" + form["username"].value + form.getvalue("friend")+"</body></html>"
 	if(form.getvalue("name") == "poststatus"):
 		writePost(username, form.getvalue("Post"))
 
