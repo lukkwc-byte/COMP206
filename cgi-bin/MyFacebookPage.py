@@ -83,24 +83,24 @@ print ''''s Feed </th>
 		<tr align="center">
 			<td>
 '''
-# for member in memberlist:
-# 	print member
+for member in memberlist:
+	print member
 print '''
 			</td>
 		</tr>
 '''
-# for i in range(10):
-# 	print '''
-# 		<tr align="justify">
-# 		<td>
+for i in range(10):
+	print '''
+		<tr align="justify">
+		<td>
 
-# 		</td>
-# 		<td>
-# 	'''
-# 	print ("%s : %s", feedlist[0][i], feedlist[1][i])
-# 	print '''
-# 		</td>
-# 	'''
+		</td>
+		<td>
+	'''
+	print ("%s : %s", feedlist[0][i], feedlist[1][i])
+	print '''
+		</td>
+	'''
 print '''
 		</tr>
 
