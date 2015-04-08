@@ -12,11 +12,8 @@ username=form["username"].value
 if(os.getenv('HTTP_REFERER') == "http://cs.mcgill.ca/~kluk6/cgi-bin/MyFacebookPage.py"):
 	if(form.getvalue("type") == "addfriend"):
 		add(username, form.getvalue("friend"))
-		print "Content-Type: text/html"
-		print 
-		print "<html><head></head><body>" + form["username"].value + form.getvalue("friend")+"</body></html>"
 	if(form.getvalue("type") == "poststatus"):
-		writePost(username, form.getvalue("Post"))
+		writePost(username, form.getvalue("status"))
 
 memberlist = memberList(username)
 feedlist = readPost()
