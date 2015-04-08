@@ -10,7 +10,7 @@ form = cgi.FieldStorage()
 username=form["username"].value
 
 if(os.getenv('HTTP_REFERER') == "http://cs.mcgill.ca/~kluk6/cgi-bin/MyFacebookPage.py"):
-	if(form["name"].value == "addfriend"):
+	if(form.getvalue("name") == "addfriend"):
 		add(username, form["friend"].value)
 	if(form["name"].value == "poststatus"):
 		writePost(username, form["Post"].value)
@@ -92,7 +92,7 @@ print '''
 			</td>
 		</tr>
 '''
-for i in range(10):
+for i in range(len(feedlist[0])):
 	print '''
 		<tr align="justify">
 		<td>
