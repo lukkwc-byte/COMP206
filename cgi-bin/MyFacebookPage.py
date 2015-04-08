@@ -5,7 +5,7 @@ from AddFriend import add
 from FeedLogic import readFeed, writeFeed, readPost, writePost
 import cgi
 
-# username=form.getvalue("username")
+username=form.getvalue("username")
 
 # if(form.getvalue("name") == "addfriend"):
 # 	add(username, form.getvalue("friend"))

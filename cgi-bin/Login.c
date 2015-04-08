@@ -101,7 +101,7 @@ void SuccessLogin(char* user){
 	printf("<h2> Welcome back!</h2>");
 	printf("<img src=\"http://static.businessinsider.com/image/524fff1b69beddd602d59776/image.jpg\">");
 	printf("<p> Click below to re-enter the gawdly domain of applied maths! </p>");
-	printf("<form action=\"../cgi-bin/MyFacebookPage.py\" method=POST>");
+	printf("<form name=\"form\" action=\"../cgi-bin/MyFacebookPage.py\" method=POST>");
 	printf("<input type=\"hidden\" name=\"username\" value=%s>", user);
 	printf("<input type=\"submit\" value=\"Enter\">");
 	printf("</form>");
