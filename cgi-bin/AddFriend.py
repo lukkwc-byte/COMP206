@@ -17,5 +17,3 @@ def add(username, friend):
 	members=open("members.csv", "w")	
 	for i in range(len(memberslist)):
 		members.write(memberslist[i]+"\n")
-
-add("niko", "boris")
