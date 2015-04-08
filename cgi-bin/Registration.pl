@@ -98,27 +98,28 @@ if ($valid == 1){
             <font color="#68a8ad" size="4">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font>
         </center>
     </header>
-        
-        <section>
-                <center>
+
+    <section>
+        <center>
             <p> Join the website that connects statistics enthusiasts together.</p>
-            <form name="register" action="Registration.pl" method="post">
+            <form name="register" action="cgi-bin/Registration.pl" method="post">
                 <br><br>
-                <h3><centre><b>Sign up</b></centre></h3>
+                <h3><b>Sign up</b></h3>
+                <h6>Note: Spaces will be removed</h6>
                 <font color="red" style="font-family:verdana"><b>Your username must be unique. Please enter another userame.</b></font>
                 <table>
-                <tr>    
-                <td><h5>Name:</h5></td><td><h5><input type="text" name="name"></h5></td>
-                </tr><tr>
-                <td><h5>Username:</h5></td><td><h5><input type="text" name="username"></h5></td>
+                    <tr>    
+                        <td><h5>Name:</h5></td><td><h5><input type="text" name="name"></h5></td>
+                    </tr><tr>
+                    <td><h5>Username:</h5></td><td><h5><input type="text" name="username"></h5></td>
                 </tr><tr>
                 <td><h5>Password:</h5></td><td><h5><input type="text" name="password"></h5></td>
-                </tr>
-                </table>
-                <input type="submit" value="Register">
-            </form>
-        <section>
-
+            </tr>
+        </table>
+        <input type="submit" value="Register">
+    </form>
+</center>
+</section>
     <footer>
         <center>
             <font color="#68a8ad" size="4">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font><br>
