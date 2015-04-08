@@ -3,8 +3,6 @@
 # from FeedLogic import readFeed, writeFeed, readPost, writePost
 # import cgi
 
-print "Content-Type: text/html"
-
 # username=form.getvalue("username")
 
 # if(form.getvalue("name") == "addfriend"):
@@ -14,6 +12,9 @@ print "Content-Type: text/html"
 
 # memberlist = memberList(username)
 # feedlist = readPost()
+
+print "Content-Type: text/html"
+print 
 
 print '''
 <html>
