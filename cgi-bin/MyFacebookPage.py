@@ -73,7 +73,7 @@ print '''
 					<td align="justify"><h5>What's on your mind?</h5></td><td><h5><input type="text" name="status"></h5></td>
 					<td align="justify">
 						<input type="submit" value="Post">
-						<input type="hidden" name="type" value="post">
+						<input type="hidden" name="type" value="poststatus">
 					</td>
 				</tr>
 			</table>
