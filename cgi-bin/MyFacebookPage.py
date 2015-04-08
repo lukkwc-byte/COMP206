@@ -9,9 +9,10 @@ import os
 form = cgi.FieldStorage()
 username=form["username"].value
 
+
 print "Content-Type: text/html"
 print
-print "<html><head></head><body>" + form + "</body></html>"
+print "<html><head></head><body>" + str(len(form)) + "</body></html>"
 
 if(os.getenv('HTTP_REFERER') == "http://cs.mcgill.ca/~kluk6/cgi-bin/MyFacebookPage.py"):
 	print "Content-Type: text/html"
