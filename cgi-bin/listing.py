@@ -13,6 +13,6 @@ def memberList(username):
 			lineUser = line.split()[0]
 
 			# if lineUser != username:
-			# 	listing.append(lineUser)
+			listing.append(lineUser)
 
 	return listing
