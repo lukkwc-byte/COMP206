@@ -1,16 +1,16 @@
-from listing import memberList
-from AddFriend import add
-from FeedLogic import readFeed, writeFeed, readPost, writePost
-import cgi
+# from listing import memberList
+# from AddFriend import add
+# from FeedLogic import readFeed, writeFeed, readPost, writePost
+# import cgi
 
 # username=form.getvalue("username")
 
 # if(form.getvalue("name") == "addfriend"):
-# 	add(form.getvalue("friend"))
+# 	add(username, form.getvalue("friend"))
 # if(form.getvalue("name") == "poststatus"):
 # 	writePost(username, form.getvalue("Post"))
 
-# memberlist = memberList()
+# memberlist = memberList(username)
 # feedlist = readPost()
 
 print '''

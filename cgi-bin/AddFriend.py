@@ -1,7 +1,4 @@
-username=form.getvalue("username")
-friend=form.getvalue("friend")
-
-def add():
+def add(username, friend):
 	with open("members.csv") as members:
 		memberslist=members.read().splitlines()
 		numLines=len(memberslist)
