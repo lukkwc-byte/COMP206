@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-use lib '/home/2013/nyasui/public_html/Text-CSV-0.5';
 use CGI;
 use CGI::Carp qw(fatalsToBrowser);
 use strict;
