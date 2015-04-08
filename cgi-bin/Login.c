@@ -69,7 +69,7 @@ void FailLogin(){
 	printf("<center>");
 	printf("<h2> Oh no! We couldn't find your credential in our database.</h2>");
 	printf("<img src=\"https://teachertoolkitdotme.files.wordpress.com/2013/06/oh-no.jpg\">");
-	printf("<p> Click <a href=\"http://cs.mcgill.ca/~kluk6/welcome.html\">here</a> to try again </p>");
+	printf("<p> Click <a href=\"http://cs.mcgill.ca/~kluk6/Welcome.html\">here</a> to try again </p>");
 	printf("<footer>");
 	printf("<center>");
 	printf("<font color=\"#68a8ad\" size=\"4\">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font><br>");
