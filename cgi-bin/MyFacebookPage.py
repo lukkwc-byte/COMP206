@@ -12,7 +12,7 @@ username=form["username"].value
 
 print "Content-Type: text/html"
 print
-print "<html><head></head><body>" + str(len(form)) + "</body></html>"
+print "<html><head></head><body>" + form["type"].value + "</body></html>"
 
 if(os.getenv('HTTP_REFERER') == "http://cs.mcgill.ca/~kluk6/cgi-bin/MyFacebookPage.py"):
 	print "Content-Type: text/html"
@@ -52,7 +52,7 @@ print '''
 		</center>
 	</header>
 
-	<form name="addfriend" action="MyFacebookPage.py" method="post">
+	<form action="MyFacebookPage.py" method="post">
 		<input type="hidden" name="username" value="
 '''
 print username
@@ -68,6 +68,7 @@ print '''
 					</h5></td>
 					<td align="justify"><input type="submit" value="Add">
 					</td>
+				<input type="hidden" name="type" value="addfriend">
 				</form>
 				<td>
 				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
@@ -81,6 +82,7 @@ print '''
 					<td align="justify"><h5>What's on your mind?</h5></td><td><h5><input type="text" name="status"></h5></td>
 					<td align="justify">
 						<input type="submit" value="Post">
+						<input type="hidden" name="type" value="post">
 					</td>
 				</tr>
 			</table>
