@@ -61,7 +61,7 @@ print '''
 				<form name="poststatus" action="MyFacebookPage.py" method="post">
 				<input type="hidden" name="username" value="
 '''
-# print username
+print username
 print '''
 ">
 					<td align="justify"><h5>What's on your mind?</h5></td><td><h5><input type="text" name="status"></h5></td>
@@ -77,7 +77,7 @@ print '''
 				<th> Member List </th>
 				<th align="justify"> 
 '''
-# print username
+print username
 print ''''s Feed </th>
 		</tr>
 		<tr align="center">
