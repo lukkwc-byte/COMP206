@@ -4,6 +4,8 @@ use strict;
 use warnings;
 use Text::CSV;
 
+print "Content-type: text/html\n\n";
+
 # KEVIN THIS IS FOR YOU
 my $relative_path_to_csv = "members.csv";
 my $path_to_login = "http://cs.mcgill.ca/~kluk6/";
@@ -21,7 +23,7 @@ my $pwd = $cgi->param( 'password' );
 $pwd = '' unless $pwd;
 $pwd =~ tr/ //ds;
 
-# print "Content-type: text/html\n\n";
+print "Content-type: text/html\n\n";
 
 my $file = $relative_path_to_csv;
 my $valid = 1;
