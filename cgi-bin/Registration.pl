@@ -4,7 +4,6 @@ use CGI;
 use CGI::Carp qw(fatalsToBrowser);
 use strict;
 use warnings;
-use Text::CSV;
 
 print "Content-type: text/html\n\n";
 
