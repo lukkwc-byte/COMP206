@@ -84,7 +84,8 @@ print ''''s Feed </th>
 			<td>
 '''
 for member in memberlist:
-	print member+"\n"
+	print member
+	print "<br>"
 print '''
 			</td>
 		</tr>
