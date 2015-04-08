@@ -29,7 +29,7 @@ void main(void){
 }
 
 int Validate(char* user, char* pass){
-	char filename[8]="members.csv";
+	char filename[12]="members.csv";
         char line[9999];
         int valid;
 
@@ -37,12 +37,12 @@ int Validate(char* user, char* pass){
 
         char lineUser[255];
         char linePass[255];
-        char lineFriends[99999];
+        char lineFriends[9999];
 	char lineName[255];
 
         FILE* file=fopen(filename, "rt");
         while(fgets(line, sizeof(line),file)){
-                sscanf(line,"%s %s %s %s", &lineName, &lineUser, &linePass, &lineFriends);
+                sscanf(line,"%s %s %s %s", lineName, lineUser, linePass, lineFriends);
                 if(strcmp(lineUser,user)==0 && strcmp(linePass, pass)==0){
                         valid=1;
                         break;
@@ -103,6 +103,7 @@ void SuccessLogin(char* user){
 	printf("<p> Click below to re-enter the gawdly domain of applied maths! </p>");
 	printf("<form action=\"../cgi-bin/Feed.py\" method=POST>");
 	printf("<input type=\"hidden\" name=\"username\" value=%s>", user);
+	printf("<input type=\"submit\" value=\"Enter\">");
 	printf("<footer>");
 	printf("<center>");
 	printf("<font color=\"#68a8ad\" size=\"4\">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font><br>");
