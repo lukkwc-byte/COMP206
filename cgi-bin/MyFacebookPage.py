@@ -9,10 +9,14 @@ import os
 form = cgi.FieldStorage()
 username=form["username"].value
 
+print "Content-Type: text/html"
+print
+print "<html><head></head><body>" + form + "</body></html>"
+
 if(os.getenv('HTTP_REFERER') == "http://cs.mcgill.ca/~kluk6/cgi-bin/MyFacebookPage.py"):
 	print "Content-Type: text/html"
 	print
-	print "<html><head></head><body>" + form['name'].value + "</body></html>"
+	print "<html><head></head><body>" + form + "</body></html>"
 	if(form.getvalue("name") == "addfriend"):
 		x = 0/0
 		add(username, form.getvalue("friend"))
