@@ -7,25 +7,25 @@ use warnings;
 
 print "Content-type: text/html\n\n";
 
-# # KEVIN THIS IS FOR YOU
-# my $relative_path_to_csv = "members.csv";
-# my $path_to_login = "http://cs.mcgill.ca/~kluk6/";
-# # END KEVIN THIS IS FOR YOU
+# KEVIN THIS IS FOR YOU
+my $relative_path_to_csv = "members.csv";
+my $path_to_login = "http://cs.mcgill.ca/~kluk6/";
+# END KEVIN THIS IS FOR YOU
 
-# my $cgi = new CGI;
+my $cgi = new CGI;
 
-# my $name = $cgi->param( 'name' );
-# $name = '' unless $name;
-# $name =~ tr/ //ds;
-# my $usr =  $cgi->param( 'username' );
-# $usr = '' unless $usr;
-# $usr =~ tr/ //ds;
-# my $pwd = $cgi->param( 'password' );
-# $pwd = '' unless $pwd;
-# $pwd =~ tr/ //ds;
+my $name = $cgi->param( 'name' );
+$name = '' unless $name;
+$name =~ tr/ //ds;
+my $usr =  $cgi->param( 'username' );
+$usr = '' unless $usr;
+$usr =~ tr/ //ds;
+my $pwd = $cgi->param( 'password' );
+$pwd = '' unless $pwd;
+$pwd =~ tr/ //ds;
 
-# my $file = $relative_path_to_csv;
-# my $valid = 1;
+my $file = $relative_path_to_csv;
+my $valid = 1;
 
 # open my $fh, "<", $file or die "$file: $!";
 # while(my $line = <$fh>) {
