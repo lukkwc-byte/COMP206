@@ -104,6 +104,7 @@ void SuccessLogin(char* user){
 	printf("<form action=\"../cgi-bin/MyFacebookPage.py\" method=POST>");
 	printf("<input type=\"hidden\" name=\"username\" value=%s>", user);
 	printf("<input type=\"submit\" value=\"Enter\">");
+	printf("</form>");
 	printf("<footer>");
 	printf("<center>");
 	printf("<font color=\"#68a8ad\" size=\"4\">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font><br>");
