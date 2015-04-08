@@ -14,6 +14,8 @@ def add(username, friend):
 				if lineUser==username:
 					if line.find(friend)==-1:
 						memberslist[i]=line + " " + friend
-	members=open("members", "w")	
+	members=open("members.csv", "w")	
 	for i in range(len(memberslist)):
 		members.write(memberslist[i]+"\n")
+
+add("niko", "boris")
