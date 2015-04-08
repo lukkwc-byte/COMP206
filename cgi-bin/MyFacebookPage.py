@@ -5,15 +5,16 @@ from AddFriend import add
 from FeedLogic import readFeed, writeFeed, readPost, writePost
 import cgi
 
-username=form.getvalue("username")
+form = cgi.FieldStorage()
+username=form["username"].value
 
-# if(form.getvalue("name") == "addfriend"):
-# 	add(username, form.getvalue("friend"))
-# if(form.getvalue("name") == "poststatus"):
-# 	writePost(username, form.getvalue("Post"))
+if(form["name"].value == "addfriend"):
+	add(username, form["friend"].value)
+if(form["name"].value == "poststatus"):
+	writePost(username, form["Post"].value)
 
-# memberlist = memberList(username)
-# feedlist = readPost()
+memberlist = memberList(username)
+feedlist = readPost()
 
 print "Content-Type: text/html"
 print 
