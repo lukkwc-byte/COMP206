@@ -4,14 +4,16 @@ from listing import memberList
 from AddFriend import add
 from FeedLogic import readFeed, writeFeed, readPost, writePost
 import cgi
+import os
 
 form = cgi.FieldStorage()
 username=form["username"].value
 
-if(form["name"].value == "addfriend"):
-	add(username, form["friend"].value)
-if(form["name"].value == "poststatus"):
-	writePost(username, form["Post"].value)
+if(os.getenv('HTTP_REFERER') == "http://cs.mcgill.ca/~kluk6/cgi-bin/MyFacebookPage.py"):
+	if(form["name"].value == "addfriend"):
+		add(username, form["friend"].value)
+	if(form["name"].value == "poststatus"):
+		writePost(username, form["Post"].value)
 
 memberlist = memberList(username)
 feedlist = readPost()
