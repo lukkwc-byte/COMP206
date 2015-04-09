@@ -16,127 +16,58 @@
 		</center>
 	</header>
 
-	<form name="addfriend" action="MyFacebookPage.py" method="post">
-		<input type="hidden" name="username" value="betterchangethis">
-		<table align="center">
-			<tr>	
-				<td align="justify">
+	<table align="center" width="60%">
+		<tr>	
+			<form action="MyFacebookPage.py" method="post">
+				<input type="hidden" name="username" value="">
+				<input type="hidden" name="type" value="addfriend">
+				<td>
 					<h5>Add friend:</h5>
 				</td>
-				<td align="justify">
-					<h5><input type="text" name="friend">
-					</h5></td>
-					<td align="justify"><input type="submit" value="Add">
-					</td>
-				</form>
 				<td>
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					<h5><input type="text" name="friend"></h5>
 				</td>
-				<form name="poststatus" action="MyFacebookPage.py" method="post">
-				<input type="hidden" name="username" value="betterchangethis">
-					<td align="justify"><h5>What's on your mind?</h5></td><td><h5><input type="text" name="status"></h5></td>
-					<td align="justify">
-						<input type="submit" value="Post">
-					</td>
-				</tr>
-			</table>
-		</form>
+				<td>
+					<input type="submit" value="Add">
+				</td>
+			</form>
+			<form name="poststatus" action="MyFacebookPage.py" method="post">
+				<input type="hidden" name="type" value="poststatus">
+				<input type="hidden" name="username" value="">
+				<td>
+					<h5>What's on your mind?</h5>
+				</td>
+				<td>
+					<h5><input type="text" name="status"></h5>
+				</td>
+				<td>
+					<input type="submit" value="Post">
+				</td>
+			</form>
+		</tr>
+		<tr>
+			<th></th>
+			<th>Member List</th>
+			<th></th>
+			<th></th>
+			<th>Feed</th>
+		</tr>
+		<tr>
+			<td>
 
-		<table width="85%">
-			<tr>
-				<th> Member List </th>
-				<th align="justify"> Username's Feed </th>
-			</tr>
-			<tr>
-				<td align="center">
-					ENTIRE MEMBER LIST GOES HERE
-					PLEASE INCLUDE NEWLINES!
-				</td>
-				<td align="justify">
-					Message1
-				</td>
-			</tr>
-			<tr>
-				<td>
+			</td>
+		</tr>
 
-				</td>
-				<td align="justify">
-					Message2
-				</td>
-			</tr>
-			<tr>
-				<td>
+	</table>
 
-				</td>
-				<td align="justify">
-					Message3
-				</td>
-			</tr>
-			<tr>
-				<td>
+	<p align="right"><font face="verdana" size="1"><a href="Welcome.html">LOGOUT</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;</font></p>
 
-				</td>
-				<td align="justify">
-					Message4
-				</td>
-			</tr>
-			<tr align="justify">
-				<td>
-
-				</td>
-				<td>
-					Message5
-				</td>
-			</tr>
-			<tr align="justify">
-				<td>
-
-				</td>
-				<td>
-					Message6
-				</td>
-			</tr>
-			<tr align="justify">
-				<td>
-
-				</td>
-				<td>
-					Message7
-				</td>
-			</tr>
-			<tr align="justify">
-				<td>
-
-				</td>
-				<td>
-					Message8
-				</td>
-			</tr>
-			<tr align="justify">
-				<td>
-
-				</td>
-				<td>
-					Message9
-				</td>
-			</tr>
-			<tr align="justify">
-				<td>
-
-				</td>
-				<td>
-					Message10
-				</td>
-			</tr>
-
-		</table>
-		<p align="right"><font face="verdana" size="1"><a href="cs.mcgill.ca/~kluk6">LOGOUT</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;</font></p>
-		<footer>
-			<center>
-				<font color="#68a8ad" size="4">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font><br>
-				<font size="2" face="verdana"><b>Made by: Team TimBitz</b></font><br>
-				<font color="#68a8ad" size="4">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font>
-			</center>
-		</footer>
-	</body>
-	</html>
+	<footer>
+		<center>
+			<font color="#68a8ad" size="4">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font><br>
+			<font size="2" face="verdana"><b>Made by: Team TimBitz</b></font><br>
+			<font color="#68a8ad" size="4">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font>
+		</center>
+	</footer>
+</body>
+</html>

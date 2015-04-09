@@ -39,77 +39,86 @@ print '''
 			<font color="#68a8ad" size="4">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font>
 		</center>
 	</header>
-
-	<form action="MyFacebookPage.py" method="post">
-		<input type="hidden" name="username" value="
-'''
-print username
-print '''
-">
-		<table align="center">
-			<tr>	
-				<td align="justify">
-					<h5>Add friend:</h5>
-				</td>
-				<td align="justify">
-					<h5><input type="text" name="friend">
-					</h5></td>
-					<td align="justify"><input type="submit" value="Add">
-					</td>
-				<input type="hidden" name="type" value="addfriend">
-				</form>
-				<td>
-				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-				</td>
-				<form name="poststatus" action="MyFacebookPage.py" method="post">
-				<input type="hidden" name="username" value="
-'''
-print username
-print '''
-">
-					<td align="justify"><h5>What's on your mind?</h5></td><td><h5><input type="text" name="status"></h5></td>
-					<td align="justify">
-						<input type="submit" value="Post">
-						<input type="hidden" name="type" value="poststatus">
-					</td>
-				</tr>
-			</table>
-		</form>
-
-		<table width="85%">
-			<tr>
-				<th> Member List </th>
-				<th align="justify"> 
-'''
-print username
-print ''''s Feed </th>
+<table align="center" width="60%">
+		<tr>
+			<th></th>
+			<th>Member List</th>
+			<th></th>
+			<th></th>
+			<th>Feed</th>
 		</tr>
-		<tr align="center">
+		<tr>	
+
+			<form name="poststatus" action="MyFacebookPage.py" method="post">
+				<input type="hidden" name="type" value="poststatus">
+				<input type="hidden" name="username" value="%s">
+				<td>
+					<h5>What's on your mind?</h5>
+				</td>
+				<td>
+					<h5><input type="text" name="status"></h5>
+				</td>
+				<td>
+					<input type="submit" value="Post">
+				</td>
+			</form>
+		</tr>
+''' % (username)
+
+for i in range(max(len(memberlist), len(feedlist[0]))):
+	if(i < len(feedlist[0])):
+		print '''
+		<tr>
 			<td>
-'''
-for member in memberlist:
-	print member
-	print "<br>"
-print '''
+			</td>
+			<td>'''
+		+	memberlist[i] +
+		'''
+			</td>
+			<td>
+			</td>
+			<td>
+		''' + feedlist[0][i] + '''
+			</td>
+			<td>
+		''' + feedlist[1][i] + '''
 			</td>
 		</tr>
-'''
-for i in range(len(feedlist[0])):
-	print '''
-		<tr align="justify">
-		<td>
-
-		</td>
-		<td>
-	'''
-	print (feedlist[0][i] + " : " + feedlist[1][i])
-	print '''
-		</td>
-	'''
-print '''
+		'''
+	else:
+		print '''
+				<tr>
+			<td>
+			</td>
+			<td>'''
+		+	memberlist[i] +
+		'''
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
 		</tr>
-
-	</table>
+		'''
+print '''
+	<tr>
+			<form action="MyFacebookPage.py" method="post">
+				<input type="hidden" name="username" value="%s">
+				<input type="hidden" name="type" value="addfriend">
+				<td>
+					<h5>Add friend:</h5>
+				</td>
+				<td>
+					<h5><input type="text" name="friend"></h5>
+				</td>
+				<td>
+					<input type="submit" value="Add">
+				</td>
+			</form>
+			</tr>
+		</table>
 
 	<p align="right"><font face="verdana" size="1"><a href="Welcome.html">LOGOUT</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;</font></p>
 
@@ -122,4 +131,4 @@ print '''
 	</footer>
 </body>
 </html>
-'''
+''' % (username)
