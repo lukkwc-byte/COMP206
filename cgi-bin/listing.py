@@ -2,7 +2,7 @@
 # Returns a list of members to be printed #
 ###########################################
 
-def memberList(username):
+def memberList():
 
 	listing = []
 

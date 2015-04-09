@@ -15,7 +15,7 @@ if(os.getenv('HTTP_REFERER') == "http://cs.mcgill.ca/~kluk6/cgi-bin/MyFacebookPa
 	if(form.getvalue("type") == "poststatus"):
 		writePost(username.strip(), form.getvalue("status").strip())
 
-memberlist = memberList(username)
+memberlist = memberList()
 feedlist = readPost()
 
 print "Content-Type: text/html"
@@ -72,8 +72,7 @@ for i in range(max(len(memberlist), len(feedlist[0]))):
 			<td>
 			</td>
 			<td>'''
-		+	memberlist[i] +
-		'''
+		+ memberlist[i]+'''
 			</td>
 			<td>
 			</td>
@@ -91,8 +90,7 @@ for i in range(max(len(memberlist), len(feedlist[0]))):
 			<td>
 			</td>
 			<td>'''
-		+	memberlist[i] +
-		'''
+		+ memberlist[i] +'''
 			</td>
 			<td>
 			</td>
