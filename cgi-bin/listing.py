@@ -9,8 +9,8 @@ def memberList():
 	with open("members.csv") as members:
 		memberslist=members.read().splitlines()
 
-		for line in memberslist:
-			lineUser = line.split()[0]
+		for i in range(len(memberslist))-1:
+			lineUser = memberslist[i].split()[0]
 
 			# if lineUser != username:
 			listing.append(lineUser)
