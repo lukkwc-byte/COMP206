@@ -24,7 +24,7 @@ print
 print '''
 <html>
 <head>
-	<title> World of Statistics</title>
+	<title>%s's World of Statistics</title>
 </head>
 
 <body bgcolor="#c4d4af">
@@ -63,7 +63,7 @@ print '''
 				</td>
 			</form>
 		</tr>
-''' % (username)
+''' % (username, username)
 
 for i in range(max(len(memberlist), len(feedlist[0]))):
 	if(i < len(feedlist[0])):
