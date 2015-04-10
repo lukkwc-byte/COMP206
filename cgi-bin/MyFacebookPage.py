@@ -7,16 +7,16 @@ import cgi
 import os
 
 form = cgi.FieldStorage()
-username=form["username"].value
+username="Niko"#form["username"].value
 
-if(os.getenv('HTTP_REFERER') == "http://cs.mcgill.ca/~kluk6/cgi-bin/MyFacebookPage.py"):
-	if(form.getvalue("type") == "addfriend"):
-		add(username, form.getvalue("friend"))
-	if(form.getvalue("type") == "poststatus"):
-		writePost(username.strip(), form.getvalue("status").strip())
+# if(os.getenv('HTTP_REFERER') == "http://cs.mcgill.ca/~kluk6/cgi-bin/MyFacebookPage.py"):
+# 	if(form.getvalue("type") == "addfriend"):
+# 		add(username, form.getvalue("friend"))
+# 	if(form.getvalue("type") == "poststatus"):
+# 		writePost(username.strip(), form.getvalue("status").strip())
 
-memberlist = memberList()
-feedlist = readPost()
+# memberlist = memberList()
+# feedlist = readPost()
 
 print "Content-Type: text/html"
 print 
@@ -24,7 +24,7 @@ print
 print '''
 <html>
 <head>
-	<title>%s's World of Statistics</title>
+	<title>{0}'s World of Statistics</title>
 </head>
 
 <body bgcolor="#c4d4af">
@@ -51,7 +51,7 @@ print '''
 
 			<form name="poststatus" action="MyFacebookPage.py" method="post">
 				<input type="hidden" name="type" value="poststatus">
-				<input type="hidden" name="username" value="%s">
+				<input type="hidden" name="username" value="{1}">
 				<td>
 					<h5>What's on your mind?</h5>
 				</td>
@@ -63,7 +63,7 @@ print '''
 				</td>
 			</form>
 		</tr>
-''' % (username, username)
+'''.format(username, username)
 
 for i in range(max(len(memberlist), len(feedlist[0]))):
 	if(i < len(feedlist[0])):
@@ -103,7 +103,7 @@ for i in range(max(len(memberlist), len(feedlist[0]))):
 print '''
 	<tr>
 			<form action="MyFacebookPage.py" method="post">
-				<input type="hidden" name="username" value="%s">
+				<input type="hidden" name="username" value="{0}">
 				<input type="hidden" name="type" value="addfriend">
 				<td>
 					<h5>Add friend:</h5>
@@ -129,4 +129,4 @@ print '''
 	</footer>
 </body>
 </html>
-''' % (username)
+'''.format(username)
