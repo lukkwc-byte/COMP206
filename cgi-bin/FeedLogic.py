@@ -26,13 +26,13 @@ def readPost(user):
 	friends = friends(user)
 	Feedlist=readFeed()
 	for i in range(len(Feedlist)):
-        line=Feedlist[i]
+		line=Feedlist[i]
 		for friend in friends:
 			if i % 2 == 0:
 				if line == friend:
 					Users.append(line)
 					i = i+1
-					line=Feedlist[i]
+					line = Feedlist[i]
 					Messages.append(line)
 	returnlist=[]
 	Users.reverse()
