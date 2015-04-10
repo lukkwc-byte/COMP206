@@ -39,7 +39,7 @@ print '''
 			<font color="#68a8ad" size="4">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font>
 		</center>
 	</header>
-<table align="center" width="60%">
+<table align="center" width="70%">
 		<tr>
 			<th></th>
 			<th>Member List</th>
@@ -130,8 +130,6 @@ print '''
 				</td>
 			</form>
 							<td>
-				</td>
-								<td>
 				</td>
 								<td>
 				</td>
