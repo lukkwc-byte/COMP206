@@ -40,7 +40,7 @@ print '''
 		</center>
 	</header>
 <center>
-<table width="70%">
+<table>
 		<tr>
 			<th></th>
 			<th>Member List</th>
