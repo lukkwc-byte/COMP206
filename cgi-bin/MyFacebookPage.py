@@ -135,8 +135,8 @@ print '''
 				<td>
 				</td>
 				<td>
-					<h5>What's on your mind?
-					<input type="text" name="status"></h5>
+					<h5>What's on your mind?</h5>
+					<h5><input type="text" name="status"></h5>
 					<input type="submit" value="Post">
 				</td>
 			</form>
