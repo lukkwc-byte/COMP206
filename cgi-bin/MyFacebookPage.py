@@ -68,7 +68,7 @@ print '''
 		</tr>
 '''.format(username, username)
 for i in range(max(len(memberlist), len(feedlist[0]))):
-	if(i < len(feedlist[0])):
+	if(i < len(feedlist[0]) and i < len(memberlist)):
 		print '''
 		<tr>
 			<td>
@@ -88,7 +88,7 @@ for i in range(max(len(memberlist), len(feedlist[0]))):
 			</td>
 		</tr>
 		'''.format(memberlist[i],feedlist[0][i],feedlist[1][i])
-	else:
+	else if(i < len(memberlist)):
 		print '''
 				<tr>
 			<td>
@@ -106,6 +106,25 @@ for i in range(max(len(memberlist), len(feedlist[0]))):
 			</td>
 		</tr>
 		'''.format(memberlist[i])
+	else:
+		print '''
+		<tr>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			{0} : 
+			</td>
+			<td>
+			{1}
+			</td>
+		</tr>
+		'''.format(feedlist[0][i],feedlist[1][i])
 print '''
 	<tr>
 			<form action="MyFacebookPage.py" method="post">
