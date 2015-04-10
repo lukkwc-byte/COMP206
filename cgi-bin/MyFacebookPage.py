@@ -9,7 +9,7 @@ import os
 form = cgi.FieldStorage()
 username = form["username"].value
 
-if(os.getenv('HTTP_REFERER') == "http://cs.mcgill.ca/~kluk6/cgi-bin/MyFacebookPage.py" || os.getenv('HTTP_REFERER') == "http://cs.mcgill.ca/~nyasui/cgi-bin/MyFacebookPage.py"):
+if(os.getenv('HTTP_REFERER') == "http://cs.mcgill.ca/~kluk6/cgi-bin/MyFacebookPage.py" or os.getenv('HTTP_REFERER') == "http://cs.mcgill.ca/~nyasui/cgi-bin/MyFacebookPage.py"):
 	if(form.getvalue("type") == "addfriend"):
 		add(username, form.getvalue("friend"))
 	if(form.getvalue("type") == "poststatus"):
