@@ -13,13 +13,13 @@ my $path_to_login = "http://cs.mcgill.ca/~kluk6/Welcome.html";
 
 my $cgi = new CGI;
 
-my $name = $cgi->param( 'name' );
+my $name = 'name'; #$cgi->param( 'name' );
 $name = '' unless $name;
 $name =~ tr/ //ds;
-my $usr =  $cgi->param( 'username' );
+my $usr = "usr"; #$cgi->param( 'username' );
 $usr = '' unless $usr;
 $usr =~ tr/ //ds;
-my $pwd = $cgi->param( 'password' );
+my $pwd = "pass"; #$cgi->param( 'password' );
 $pwd = '' unless $pwd;
 $pwd =~ tr/ //ds;
 
@@ -40,17 +40,20 @@ close $fh;
 
 if ($valid == 1){
     open $fh, ">>", $file or die "$file: $!";
-    for my @line @memlist:
-    	for (my $i=0; $i <= $#line; $i++){
-    	 print "$line[i]";
-    	 if($i == $#line){
-    	 	print "\n"
-    	 }
-    	 else{
-    	 	print " "
-    	 }
+    my $memlen = @memlist;
+    for (my $j=0; $j < $memlen; $j=$j+1){
+    	my @line = @memlist[$j];
+    	my $linelen = @line;
+    	for (my $i=0; $i < $linelen; $i=$i+1){
+    		print "$line[$i]";
+    		if($i == $#line){
+    	 		print "\n"
+    		}
+    		else{
+    		print " "
+    		}
     	}
-
+    }
     close $fh;
 
     print qq(
