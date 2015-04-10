@@ -54,10 +54,16 @@ print '''
 			</td>
 			<td>
 			</td>
-			<td>
-			</td>
-			<td>
-			</td>
+			<form name="poststatus" action="MyFacebookPage.py" method="post">
+				<input type="hidden" name="type" value="poststatus">
+				<input type="hidden" name="username" value="{1}">
+				<td>
+					<h5><input type="text" name="status" size="30" placeholder="What's on your mind?"></h5>
+				</td>
+				<td>
+				<input type="submit" value="Post">
+				</td>
+			</form>
 		</tr>
 '''.format(username)
 for i in range(max(len(memberlist), len(feedlist[0]))):
@@ -139,21 +145,9 @@ print '''
 				</td>
 				<td>
 					<h5><input type="text" name="friend" size="30" placeholder="Add Friend"></h5>
-					<input type="submit" value="Add">
-				</td>
-			</form>
-							<td>
-				</td>
-								<td>
-				</td>
-			<form name="poststatus" action="MyFacebookPage.py" method="post">
-				<input type="hidden" name="type" value="poststatus">
-				<input type="hidden" name="username" value="{1}">
-				<td>
-					<h5><input type="text" name="status" size="30" placeholder="What's on your mind?"></h5>
-					<input type="submit" value="Post">
 				</td>
 				<td>
+				<input type="submit" value="Add">
 				</td>
 			</form>
 			</tr>
