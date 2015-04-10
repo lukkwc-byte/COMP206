@@ -136,18 +136,18 @@ print '''
 				<input type="hidden" name="username" value="{0}">
 				<input type="hidden" name="type" value="addfriend">
 				<td>
+				</td>
+				<td>
 				<h5>Add friend:</h5>
 				</td>
 				<td>
 					<h5><input type="text" name="friend"></h5>
-					<input type="submit" value="Add">
+				</td>
+				<td>
+				<input type="submit" value="Add">
 				</td>
 			</form>
-							<td>
-				</td>
-								<td>
-				</td>
-								<td>
+				<td>
 					<h5>What's on your mind?</h5>
 				</td>
 			<form name="poststatus" action="MyFacebookPage.py" method="post">
@@ -155,6 +155,8 @@ print '''
 				<input type="hidden" name="username" value="{1}">
 				<td>
 					<h5><input type="text" name="status"></h5>
+				</td>
+				<td>
 					<input type="submit" value="Post">
 				</td>
 			</form>
