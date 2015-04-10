@@ -44,7 +44,7 @@ print '''
 		<tr>
 			<th>&emsp;</th>
 			<th>Member List</th>
-			<th>&emsp;</th>
+			<th>&emsp;&emsp;&emsp;</th>
 			<th>&emsp;</th>
 			<th>Feed</th>
 			<th>&emsp;</th>
