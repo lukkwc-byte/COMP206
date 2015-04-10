@@ -54,6 +54,7 @@ print '''
 					<h5><input type="text" name="status" size="30" placeholder="What's on your mind?"></h5>
 				</td>
 				<td>
+				<br>
 				<input type="submit" value="Post">
 				</td>
 			</form>
