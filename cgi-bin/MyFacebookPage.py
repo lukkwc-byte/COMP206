@@ -54,6 +54,18 @@ print '''
 			</td>
 			<td>
 			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
 			<form name="poststatus" action="MyFacebookPage.py" method="post">
 				<input type="hidden" name="type" value="poststatus">
 				<input type="hidden" name="username" value="{1}">
