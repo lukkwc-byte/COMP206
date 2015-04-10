@@ -161,7 +161,7 @@ print '''
 			</tr>
 		</table>
 	</center>
-	<p align="right"><font face="verdana" size="1"><a href="Welcome.html">LOGOUT</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;</font></p>
+	<p align="right"><font face="verdana" size="1"><a href="../Welcome.html">LOGOUT</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;</font></p>
 
 	<footer>
 		<center>
