@@ -138,8 +138,7 @@ print '''
 				<td>
 				</td>
 				<td>
-					<h5>Add friend:</h5>
-					<h5><input type="text" name="friend"></h5>
+					<h5><input type="text" name="friend" size="30" placeholder="Add Friend"></h5>
 					<input type="submit" value="Add">
 				</td>
 			</form>
@@ -151,8 +150,7 @@ print '''
 				<input type="hidden" name="type" value="poststatus">
 				<input type="hidden" name="username" value="{1}">
 				<td>
-					<h5>What's on your mind?</h5>
-					<h5><input type="text" name="status"></h5>
+					<h5><input type="text" name="status" size="30" placeholder="What's on your mind?"></h5>
 					<input type="submit" value="Post">
 				</td>
 				<td>
