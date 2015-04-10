@@ -65,13 +65,16 @@ for i in range(max(len(memberlist), len(feedlist[0]))):
 		print '''
 		<tr>
 			<td>
+			&emsp;
 			</td>
 			<td>
 			{0}
 			</td>
 			<td>
+			&emsp;
 			</td>
 			<td>
+			&emsp;
 			</td>
 			<td>
 			{1} : 
@@ -85,17 +88,22 @@ for i in range(max(len(memberlist), len(feedlist[0]))):
 		print '''
 				<tr>
 			<td>
+			&emsp;
 			</td>
 			<td>
 			{0}
 			</td>
 			<td>
+			&emsp;
 			</td>
 			<td>
+			&emsp;
 			</td>
 			<td>
+			&emsp;
 			</td>
 			<td>
+			&emsp;
 			</td>
 		</tr>
 		'''.format(memberlist[i])
@@ -103,12 +111,16 @@ for i in range(max(len(memberlist), len(feedlist[0]))):
 		print '''
 		<tr>
 			<td>
+			&emsp;
 			</td>
 			<td>
+			&emsp;
 			</td>
 			<td>
+			&emsp;
 			</td>
 			<td>
+			&emsp;
 			</td>
 			<td>
 			{0} : 
