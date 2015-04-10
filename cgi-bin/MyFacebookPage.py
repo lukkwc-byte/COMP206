@@ -71,26 +71,26 @@ for i in range(max(len(memberlist), len(feedlist[0]))):
 		<tr>
 			<td>
 			</td>
-			<td>'''
-		+ str(memberlist[i])+'''
+			<td>
+			{0}
 			</td>
 			<td>
 			</td>
 			<td>
-		''' + str(feedlist[0][i]) + '''
+			{1}
 			</td>
 			<td>
-		''' + str(feedlist[1][i]) + '''
+			{2}
 			</td>
 		</tr>
-		'''
+		'''.format(memberlist[i],feedlist[0][i],feedlist[1][i])
 	else:
 		print '''
 				<tr>
 			<td>
 			</td>
-			<td>'''
-		+ str(memberlist[i]) +'''
+			<td>
+			{0}
 			</td>
 			<td>
 			</td>
@@ -99,7 +99,7 @@ for i in range(max(len(memberlist), len(feedlist[0]))):
 			<td>
 			</td>
 		</tr>
-		'''
+		'''.format(memberlist[i])
 print '''
 	<tr>
 			<form action="MyFacebookPage.py" method="post">
