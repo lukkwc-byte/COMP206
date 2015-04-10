@@ -47,6 +47,7 @@ print '''
 			<th></th>
 			<th></th>
 			<th>Feed</th>
+			<th></th>
 		</tr>
 		<tr>	
 			<td>
