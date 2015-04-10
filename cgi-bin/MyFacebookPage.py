@@ -117,9 +117,9 @@ for i in range(max(len(memberlist), len(feedlist[0]))):
 			{1}
 			</td>
 		</tr>
-		</table>
 		'''.format(feedlist[0][i],feedlist[1][i])
 print '''
+	</table>
 	<table>
 	<tr>
 			<form action="MyFacebookPage.py" method="post">
@@ -138,12 +138,13 @@ print '''
 								<td>
 				</td>
 								<td>
-					<h5>What's on your mind?</h5>
+					
 				</td>
 			<form name="poststatus" action="MyFacebookPage.py" method="post">
 				<input type="hidden" name="type" value="poststatus">
 				<input type="hidden" name="username" value="{1}">
 				<td>
+					<h5>What's on your mind?</h5>
 					<h5><input type="text" name="status"></h5>
 					<input type="submit" value="Post">
 				</td>
