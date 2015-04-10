@@ -7,16 +7,16 @@ import cgi
 import os
 
 form = cgi.FieldStorage()
-username="Niko"#form["username"].value
+username=form["username"].value
 
-# if(os.getenv('HTTP_REFERER') == "http://cs.mcgill.ca/~kluk6/cgi-bin/MyFacebookPage.py"):
-# 	if(form.getvalue("type") == "addfriend"):
-# 		add(username, form.getvalue("friend"))
-# 	if(form.getvalue("type") == "poststatus"):
-# 		writePost(username.strip(), form.getvalue("status").strip())
+if(os.getenv('HTTP_REFERER') == "http://cs.mcgill.ca/~kluk6/cgi-bin/MyFacebookPage.py"):
+	if(form.getvalue("type") == "addfriend"):
+		add(username, form.getvalue("friend"))
+	if(form.getvalue("type") == "poststatus"):
+		writePost(username.strip(), form.getvalue("status").strip())
 
-# memberlist = memberList()
-# feedlist = readPost()
+memberlist = memberList()
+feedlist = readPost()
 
 print "Content-Type: text/html"
 print 
