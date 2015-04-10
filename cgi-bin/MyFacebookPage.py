@@ -134,12 +134,12 @@ print '''
 				</td>
 								<td>
 				</td>
+								<td>
+					<h5>What's on your mind?</h5>
+				</td>
 			<form name="poststatus" action="MyFacebookPage.py" method="post">
 				<input type="hidden" name="type" value="poststatus">
 				<input type="hidden" name="username" value="{1}">
-				<td>
-					<h5>What's on your mind?</h5>
-				</td>
 				<td>
 					<h5><input type="text" name="status"></h5>
 					<input type="submit" value="Post">
