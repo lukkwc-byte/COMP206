@@ -13,19 +13,23 @@ my $path_to_login = "http://cs.mcgill.ca/~kluk6/Welcome.html";
 
 my $cgi = new CGI;
 
-my $name = 'name'; #$cgi->param( 'name' );
+my $name = $cgi->param( 'name' );
 $name = '' unless $name;
 $name =~ tr/ //ds;
-my $usr = "usr"; #$cgi->param( 'username' );
+my $usr = $cgi->param( 'username' );
 $usr = '' unless $usr;
 $usr =~ tr/ //ds;
-my $pwd = "pass"; #$cgi->param( 'password' );
+my $pwd = $cgi->param( 'password' );
 $pwd = '' unless $pwd;
 $pwd =~ tr/ //ds;
 
 my $file = $relative_path_to_csv;
 my $valid = 1;
 my @memlist = ();
+
+if($usr eq "" or $name eq "" or $pwd eq ""){
+	valid = 0;
+}
 
 open (my $fh, "<", $file) or die "$file: $!";
 while(my $line = <$fh>) {
@@ -45,12 +49,12 @@ if ($valid == 1){
     	my @line = @memlist[$j];
     	my $linelen = @line;
     	for (my $i=0; $i < $linelen; $i=$i+1){
-    		print "$line[$i]";
+    		print $fh, "$line[$i]";
     		if($i == $#line){
-    	 		print "\n"
+    	 		print $fh, "\n"
     		}
     		else{
-    		print " "
+    		print $fh, " "
     		}
     	}
     }
