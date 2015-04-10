@@ -32,11 +32,10 @@ if($usr eq "" or $name eq "" or $pwd eq ""){
 }
 
 open (my $fh, "<", $file) or die "$file: $!";
-while(my $line = <$fh>) {
-    chomp $line;
-    my @fields = split(" ", $line);
-    push @memlist, @fields;
-    if($usr eq $fields[1]){
+while(<$fh>) {
+    chomp;
+    push @memlist, [ split / / ];
+    if($usr eq $_[1]){
         $valid = 0;
     }
 }
@@ -47,7 +46,6 @@ if ($valid == 1){
     my $memlen = @memlist;
     for (my $j=0; $j < $memlen; $j=$j+1){
     	my @line = @memlist[$j];
-    	print "@line\n";
     	my $linelen = @line;
     	for (my $i=0; $i < $linelen; $i=$i+1){
     		print $fh "$line[$i]";
