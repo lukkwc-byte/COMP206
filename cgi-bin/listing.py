@@ -10,9 +10,9 @@ def memberList():
 		memberslist=members.read().splitlines()
 
 		for i in range(len(memberslist)-1):
-			lineUser = memberslist[i].split()[0]
+			if(memberslist[i]):
+				lineUser = memberslist[i].split()[0]
 
-			# if lineUser != username:
-			listing.append(lineUser)
+				listing.append(lineUser)
 
 	return listing
