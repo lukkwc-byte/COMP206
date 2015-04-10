@@ -24,7 +24,7 @@ print
 print '''
 <html>
 <head>
-	<title>{0}'s World of Statistics</title>
+	<title>World of Statistics</title>
 </head>
 
 <body bgcolor="#c4d4af">
@@ -33,7 +33,7 @@ print '''
 			<font color="#68a8ad" size="4">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font>
 			<br>
 			<h1>
-				<b>World of Statistics</b>
+				<b>{0}'sWorld of Statistics</b>
 			</h1>
 
 			<font color="#68a8ad" size="4">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font>
@@ -64,7 +64,7 @@ print '''
 			</form>
 		</tr>
 '''.format(username, username)
-print "{0} {1}".format(len(memberlist), len(feedlist[0]))
+print "{0}".format(max(len(memberlist), len(feedlist[0])))
 for i in range(max(len(memberlist), len(feedlist[0]))):
 	if(i < len(feedlist[0])):
 		print '''
@@ -72,15 +72,15 @@ for i in range(max(len(memberlist), len(feedlist[0]))):
 			<td>
 			</td>
 			<td>'''
-		+ memberlist[i]+'''
+		+ str(memberlist[i])+'''
 			</td>
 			<td>
 			</td>
 			<td>
-		''' + feedlist[0][i] + '''
+		''' + str(feedlist[0][i]) + '''
 			</td>
 			<td>
-		''' + feedlist[1][i] + '''
+		''' + str(feedlist[1][i]) + '''
 			</td>
 		</tr>
 		'''
@@ -90,7 +90,7 @@ for i in range(max(len(memberlist), len(feedlist[0]))):
 			<td>
 			</td>
 			<td>'''
-		+ memberlist[i] +'''
+		+ str(memberlist[i]) +'''
 			</td>
 			<td>
 			</td>
