@@ -88,7 +88,7 @@ for i in range(max(len(memberlist), len(feedlist[0]))):
 			</td>
 		</tr>
 		'''.format(memberlist[i],feedlist[0][i],feedlist[1][i])
-	else if(i < len(memberlist)):
+	elif(i < len(memberlist)):
 		print '''
 				<tr>
 			<td>
