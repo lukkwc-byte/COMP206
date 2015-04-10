@@ -14,10 +14,10 @@ def friends(user):
 	with open("members.csv") as members:
 		memberslist=members.read().splitlines()
 
-		for i in range(len(memberslist)-1):
-			if(memberslist[i]):
-				if(memberslist[i].split()[1] == user):
-					friends = memberslist[i].split()[1:]
+		for line in memberslist:
+			if(len(line)):
+				if(line.split()[1] == user):
+					friends = line.split()[2:]
 	return friends
 
 def readPost(user):
