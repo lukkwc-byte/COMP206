@@ -7,7 +7,7 @@ def add(username, friend):
 			if(len(memberslist[i].split()) > 1):
 				if(username == memberslist[i].split()[1]):
 					if(len(memberslist[i].split()) > 3):
-						for usr in range(memberslist[i].split()[3:]):
+						for usr in memberslist[i].split()[3:]:
 							if(friend == usr):
 								valid = 0
 								break
