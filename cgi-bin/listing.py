@@ -11,7 +11,7 @@ def memberList():
 
 		for i in range(len(memberslist)-1):
 			if(memberslist[i]):
-				lineUser = memberslist[i].split()[0]
+				lineUser = memberslist[i].split()[1]
 
 				listing.append(lineUser)
 

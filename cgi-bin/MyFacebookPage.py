@@ -16,7 +16,7 @@ if(os.getenv('HTTP_REFERER') == "http://cs.mcgill.ca/~kluk6/cgi-bin/MyFacebookPa
 		writePost(username.strip(), form.getvalue("status").strip())
 
 memberlist = memberList()
-feedlist = readPost()
+feedlist = readPost(username)
 
 print "Content-Type: text/html"
 print 
