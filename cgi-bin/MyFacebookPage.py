@@ -40,7 +40,7 @@ print '''
 		</center>
 	</header>
 <center>
-<table width="85%">
+<table width="70%">
 		<tr>
 			<th></th>
 			<th>Member List</th>
@@ -117,8 +117,10 @@ for i in range(max(len(memberlist), len(feedlist[0]))):
 			{1}
 			</td>
 		</tr>
+		</table>
 		'''.format(feedlist[0][i],feedlist[1][i])
 print '''
+	<table>
 	<tr>
 			<form action="MyFacebookPage.py" method="post">
 				<input type="hidden" name="username" value="{0}">
