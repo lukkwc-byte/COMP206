@@ -9,7 +9,7 @@ def memberList():
 	with open("members.csv") as members:
 		memberslist=members.read().splitlines()
 
-		for i in range(len(memberslist)-1):
+		for i in range(len(memberslist)):
 			if(memberslist[i]):
 				lineUser = memberslist[i].split()[1]
 
