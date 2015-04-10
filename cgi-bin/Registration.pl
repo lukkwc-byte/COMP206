@@ -44,8 +44,8 @@ close $fh;
 if ($valid == 1){
     open $fh, ">", $file or die "$file: $!";
     my $memlen = @memlist;
-    foreach my @el @memlist{
-    	print "@el";
+    foreach (my $e=0; $e < $memlen; $e=$e+1){
+    	print "@memlen[$e]";
     }
     for (my $j=0; $j < $memlen; $j=$j+1){
     	my @line = @memlist[$j];
