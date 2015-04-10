@@ -126,8 +126,6 @@ print '''
 				</td>
 				<td>
 					<h5><input type="text" name="friend"></h5>
-				</td>
-				<td>
 					<input type="submit" value="Add">
 				</td>
 			</form>
