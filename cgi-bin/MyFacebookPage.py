@@ -50,7 +50,7 @@ print '''
 			<form name="poststatus" action="MyFacebookPage.py" method="post">
 				<input type="hidden" name="type" value="poststatus">
 				<input type="hidden" name="username" value="{1}">
-				<td>
+				<td><br>
 					<h5><input type="text" name="status" size="30" placeholder="What's on your mind?"></h5>
 				</td>
 				<td>
