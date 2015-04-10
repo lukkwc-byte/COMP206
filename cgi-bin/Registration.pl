@@ -45,11 +45,10 @@ if ($valid == 1){
     open $fh, ">", $file or die "$file: $!";
     my $memlen = @memlist;
     for (my $e=0; $e < $memlen; $e=$e+1){
-    	# my $memlene = @memlist[$e];
-    	# for (my $p=0; $p < $memlene; $p=$p+1){
-    	# 	print "$memlist[$e][$p]";
-    	# }
-    	print "$memlist[$e]";
+    	my $memlene = @memlist[$e];
+    	for (my $p=0; $p < $memlene; $p=$p+1){
+    		print "$memlist[$e][$p]";
+    	}
     }
     for (my $j=0; $j < $memlen; $j=$j+1){
     	my @line = @memlist[$j];
