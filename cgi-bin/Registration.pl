@@ -43,14 +43,14 @@ while(my $line = <$fh>) {
 close $fh;
 
 if ($valid == 1){
-    open $fh, ">>", $file or die "$file: $!";
+    open $fh, ">", $file or die "$file: $!";
     my $memlen = @memlist;
     for (my $j=0; $j < $memlen; $j=$j+1){
     	my @line = @memlist[$j];
     	my $linelen = @line;
     	for (my $i=0; $i < $linelen; $i=$i+1){
     		print $fh "$line[$i]";
-    		if($i == $#line){
+    		if($i == $linelen){
     	 		print $fh "\n"
     		}
     		else{
