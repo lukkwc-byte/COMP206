@@ -28,7 +28,7 @@ my $valid = 1;
 my @memlist = ();
 
 if($usr eq "" or $name eq "" or $pwd eq ""){
-	valid = 0;
+	$valid = 0;
 }
 
 open (my $fh, "<", $file) or die "$file: $!";
