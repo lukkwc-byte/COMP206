@@ -57,7 +57,7 @@ print '''
 			<td>
 			</td>
 		</tr>
-'''.format(username, username)
+'''.format(username)
 for i in range(max(len(memberlist), len(feedlist[0]))):
 	if(i < len(feedlist[0]) and i < len(memberlist)):
 		print '''
@@ -154,4 +154,4 @@ print '''
 	</footer>
 </body>
 </html>
-'''.format(username)
+'''.format(username, username)
