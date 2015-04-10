@@ -49,12 +49,12 @@ if ($valid == 1){
     	my @line = @memlist[$j];
     	my $linelen = @line;
     	for (my $i=0; $i < $linelen; $i=$i+1){
-    		print $fh, "$line[$i]";
+    		print $fh "$line[$i]";
     		if($i == $#line){
-    	 		print $fh, "\n"
+    	 		print $fh "\n"
     		}
     		else{
-    		print $fh, " "
+    		print $fh " "
     		}
     	}
     }
@@ -131,7 +131,7 @@ if ($valid == 1){
                     </tr><tr>
                     <td><h5>Username:</h5></td><td><h5><input type="text" name="username"></h5></td>
                 </tr><tr>
-                <td><h5>Password:</h5></td><td><h5><input type="text" name="password"></h5></td>
+                <td><h5>Password:</h5></td><td><h5><input type="password" name="password"></h5></td>
             </tr>
         </table>
         <input type="submit" value="Register">
