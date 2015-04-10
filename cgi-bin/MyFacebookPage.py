@@ -42,10 +42,10 @@ print '''
 <center>
 <table width="75%" border="1">
 		<tr>
-			<th>&emsp;</th>
+			<th>&emsp;&emsp;&emsp;</th>
 			<th>Member List</th>
 			<th>&emsp;&emsp;&emsp;</th>
-			<th>&emsp;</th>
+			<th>&emsp;&emsp;&emsp;</th>
 			<th>Feed</th>
 			<th>&emsp;</th>
 		</tr>
