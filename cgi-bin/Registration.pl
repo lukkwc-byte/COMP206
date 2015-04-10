@@ -25,21 +25,32 @@ $pwd =~ tr/ //ds;
 
 my $file = $relative_path_to_csv;
 my $valid = 1;
+my @memlist = ();
 
 open (my $fh, "<", $file) or die "$file: $!";
 while(my $line = <$fh>) {
     chomp $line;
     my @fields = split(" ", $line);
+    push @memlist, @fields;
     if($usr eq $fields[1]){
         $valid = 0;
-        last;
     }
 }
 close $fh;
 
 if ($valid == 1){
     open $fh, ">>", $file or die "$file: $!";
-    print $fh  "$name $usr $pwd\n";
+    for my @line @memlist:
+    	for (my $i=0; $i <= $#line; $i++){
+    	 print "$line[i]";
+    	 if($i == $#line){
+    	 	print "\n"
+    	 }
+    	 else{
+    	 	print " "
+    	 }
+    	}
+
     close $fh;
 
     print qq(
