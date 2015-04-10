@@ -50,7 +50,7 @@ if ($valid == 1){
     	my $linelen = @line;
     	for (my $i=0; $i < $linelen; $i=$i+1){
     		print $fh "$line[$i]";
-    		if($i == $linelen){
+    		if($i == $linelen-1){
     	 		print $fh "\n"
     		}
     		else{
