@@ -52,8 +52,6 @@ print '''
 				<td>
 					<h5>What's on your mind?
 					<input type="text" name="status"></h5>
-				</td>
-				<td>
 					<input type="submit" value="Post">
 				</td>
 			</form>
