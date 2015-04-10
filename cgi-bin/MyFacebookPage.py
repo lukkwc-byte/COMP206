@@ -133,8 +133,6 @@ print '''
 				<input type="hidden" name="type" value="poststatus">
 				<input type="hidden" name="username" value="{1}">
 				<td>
-				</td>
-				<td>
 					<h5>What's on your mind?</h5>
 					<h5><input type="text" name="status"></h5>
 					<input type="submit" value="Post">
