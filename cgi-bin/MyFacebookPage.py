@@ -39,7 +39,8 @@ print '''
 			<font color="#68a8ad" size="4">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font>
 		</center>
 	</header>
-<table align="center" width="85%">
+<center>
+<table width="85%">
 		<tr>
 			<th></th>
 			<th>Member List</th>
@@ -146,7 +147,7 @@ print '''
 			</form>
 			</tr>
 		</table>
-
+	</center>
 	<p align="right"><font face="verdana" size="1"><a href="Welcome.html">LOGOUT</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;</font></p>
 
 	<footer>
