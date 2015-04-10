@@ -47,6 +47,7 @@ if ($valid == 1){
     my $memlen = @memlist;
     for (my $j=0; $j < $memlen; $j=$j+1){
     	my @line = @memlist[$j];
+    	print "@line\n"
     	my $linelen = @line;
     	for (my $i=0; $i < $linelen; $i=$i+1){
     		print $fh "$line[$i]";
