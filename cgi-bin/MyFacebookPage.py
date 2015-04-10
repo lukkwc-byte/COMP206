@@ -40,14 +40,14 @@ print '''
 		</center>
 	</header>
 <center>
-<table>
+<table width="75%">
 		<tr>
-			<th></th>
+			<th>&emsp;</th>
 			<th>Member List</th>
-			<th></th>
-			<th></th>
+			<th>&emsp;</th>
+			<th>&emsp;</th>
 			<th>Feed</th>
-			<th></th>
+			<th>&emsp;</th>
 		</tr>
 		<tr>	
 			<td>
