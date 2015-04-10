@@ -64,7 +64,7 @@ print '''
 			</form>
 		</tr>
 '''.format(username, username)
-
+print "{0} {1}".format(len(memberlist), len(feedlist[0]))
 for i in range(max(len(memberlist), len(feedlist[0]))):
 	if(i < len(feedlist[0])):
 		print '''
