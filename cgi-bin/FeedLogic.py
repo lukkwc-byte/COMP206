@@ -23,11 +23,11 @@ def friends(user):
 def readPost(user):
 	Users=[]
 	Messages=[]
-	friends = friends(user)
+	friendlist = friends(user)
 	Feedlist=readFeed()
 	for i in range(len(Feedlist)):
 		line=Feedlist[i]
-		for friend in friends:
+		for friend in friendlist:
 			if i % 2 == 0:
 				if line == friend:
 					Users.append(line)
