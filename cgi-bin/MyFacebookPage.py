@@ -48,7 +48,10 @@ print '''
 			<th>Feed</th>
 		</tr>
 		<tr>	
-
+			<td>
+			</td>
+			<td>
+			</td>
 			<form name="poststatus" action="MyFacebookPage.py" method="post">
 				<input type="hidden" name="type" value="poststatus">
 				<input type="hidden" name="username" value="{1}">
@@ -64,7 +67,6 @@ print '''
 			</form>
 		</tr>
 '''.format(username, username)
-print "{0}".format(max(len(memberlist), len(feedlist[0])))
 for i in range(max(len(memberlist), len(feedlist[0]))):
 	if(i < len(feedlist[0])):
 		print '''
