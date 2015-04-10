@@ -46,17 +46,6 @@ print '''
 			<th></th>
 			<th></th>
 			<th>Feed</th>
-			<form name="poststatus" action="MyFacebookPage.py" method="post">
-				<input type="hidden" name="type" value="poststatus">
-				<input type="hidden" name="username" value="{1}">
-				<td>
-					<h5>What's on your mind?
-					<input type="text" name="status"></h5>
-				</td>
-				<td>
-					<input type="submit" value="Post">
-				</td>
-			</form>
 		</tr>
 		<tr>	
 			<td>
