@@ -81,8 +81,8 @@ for i in range(max(len(memberlist), len(feedlist[0]))):
 			<td>
 			</td>
 			<td>
-			<td>
 			</td>
+			<td>
 			{1}
 			</td>
 			<td>
