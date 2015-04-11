@@ -42,7 +42,10 @@ while(<$fh>) {
 }
 close $fh;
 
+
 if ($valid == 1){
+	push @memlist, \[$name, $usr, $pwd];
+
     open $fh, ">", $file or die "$file: $!";
     for (my $e=0; $e < @memlist; $e++){
     	for (my $p=0; $p < @{$memlist[$e]}; $p++){
