@@ -18,6 +18,7 @@ def friends(user):
 			if(len(line)):
 				if(line.split()[1] == user):
 					friends = line.split()[2:]
+	friends.append(user);
 	return friends
 
 def readPost(user):
