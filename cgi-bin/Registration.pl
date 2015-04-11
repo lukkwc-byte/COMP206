@@ -49,12 +49,10 @@ if ($valid == 1){
     		print "$memlist[$e][$p]";
     	}
     }
-    for (my $j=0; $j < $memlen; $j=$j+1){
-    	my @line = @memlist[$j];
-    	my $linelen = @line;
-    	for (my $i=0; $i < $linelen; $i=$i+1){
-    		print $fh "$memlist[$j][$i]";
-    		if($i == $linelen-1){
+    for (my $e=0; $e < @memlist; $e++){
+    	for (my $p=0; $p < @{$memlist[$e]}; $p++){
+    		print "$memlist[$e][$p]";
+    		if($p == @{$memlist[$e]}-1){
     	 		print $fh "\n"
     		}
     		else{
