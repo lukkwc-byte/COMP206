@@ -48,15 +48,10 @@ if ($valid == 1){
 	push @memlist, \@newusr;
 
     open $fh, ">", $file or die "$file: $!";
-    for (my $e=0; $e < @memlist; $e++){
-    	for (my $p=0; $p < @{$memlist[$e]}; $p++){
-    		print "$memlist[$e][$p]";
-    	}
-    }
-    for (my $e=0; $e < @memlist; $e++){
-    	for (my $p=0; $p < @{$memlist[$e]}; $p++){
-    		print $fh "$memlist[$e][$p]";
-    		if($p == @{$memlist[$e]}-1){
+    for (my $i = 0; $i < @memlist; $i++){
+    	for (my $j = 0; $j < @{$memlist[$i]}; $j++){
+    		print $fh "$memlist[$i][$j]";
+    		if($j == @{$memlist[$i]}-1){
     	 		print $fh "\n";
     		}
     		else{
