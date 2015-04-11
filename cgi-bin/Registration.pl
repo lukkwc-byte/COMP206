@@ -35,7 +35,6 @@ open (my $fh, "<", $file) or die "$file: $!";
 while(<$fh>) {
     chomp;
     my @fields = split(/ /);
-    print "@fields";
     push @memlist, \@fields;
     if($usr eq $fields[1]){
         $valid = 0;
@@ -51,7 +50,7 @@ if ($valid == 1){
     	# for (my $p=0; $p < $memlene; $p=$p+1){
     	# 	print "$memlist[$e][$p]";
     	# }
-    	print "$memlist[$e]";
+    	print "@memlist[$e]";
     }
     for (my $j=0; $j < $memlen; $j=$j+1){
     	my @line = @memlist[$j];
