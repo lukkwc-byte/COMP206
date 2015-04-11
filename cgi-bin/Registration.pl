@@ -35,8 +35,8 @@ open (my $fh, "<", $file) or die "$file: $!";
 while(<$fh>) {
     chomp;
     my @fields = split(/ /);
-    push @memlist, \@fields;
-    if($usr eq $_[1]){
+    push @memlist, @fields;
+    if($usr eq $fields[1]){
         $valid = 0;
     }
 }
