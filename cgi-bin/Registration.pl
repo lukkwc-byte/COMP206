@@ -122,10 +122,11 @@ if ($valid == 1){
         <center>
             <p> Join the website that connects statistics enthusiasts together.</p>
             <form name="register" action="Registration.pl" method="post">
-                <br><br>
+                <br>
                 <h3><b>Sign up</b></h3>
                 <h6>Note: Spaces will be removed</h6>
-                <font color="red" style="font-family:verdana"><b>Your username must be unique. Please enter another userame.</b></font>
+                <font color="red" style="font-family:verdana"><b>This username is taken. Please enter another userame.</b></font>
+                <br>
                 <table>
                     <tr>    
                         <td><h5>Name:</h5></td><td><h5><input type="text" name="name"></h5></td>
