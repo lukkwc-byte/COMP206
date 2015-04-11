@@ -3,7 +3,7 @@ def add(username, friend):
 	with open("members.csv") as members:
 		memberslist=members.read().splitlines()
 		valid = 1
-		j = -1
+		j = 0
 		friend_exists = 0
 		for i in range(len(memberslist)):
 			if(len(memberslist[i].split()) > 1):
@@ -18,7 +18,7 @@ def add(username, friend):
 								j = 0
 								break
 		if valid and j and friend_exists:
-			memberslist[j+1] = memberslist[j+1] + " {0}".format(friend)
+			memberslist[j-1] = memberslist[j-1] + " {0}".format(friend)
 
 	members=open("members.csv", "w")	
 	for i in range(len(memberslist)):
