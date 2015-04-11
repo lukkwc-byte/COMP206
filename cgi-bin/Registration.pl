@@ -44,7 +44,7 @@ close $fh;
 
 
 if ($valid == 1){
-	my @newusr = [$name, $usr, $pwd];
+	my @newusr = ($name, $usr, $pwd);
 	push @memlist, \@newusr;
 
     open $fh, ">", $file or die "$file: $!";
