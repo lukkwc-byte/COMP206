@@ -8,7 +8,7 @@ print "Content-type: text/html\n\n";
 
 # KEVIN THIS IS FOR YOU
 my $relative_path_to_csv = 'members.csv';
-my $path_to_login = "http://cs.mcgill.ca/~kluk6/Welcome.html";
+my $path_to_login = "../Welcome.html";
 # END KEVIN THIS IS FOR YOU
 
 my $cgi = new CGI;
@@ -138,8 +138,10 @@ if ($valid == 1){
         </table>
         <input type="submit" value="Register">
     </form>
-</center>
+        <br><br><a href="Welcome.html">Changed your mind? Click to go back.</a><br><br><br>
+    </center>
 </section>
+<center>
     <footer>
         <center>
             <font color="#68a8ad" size="4">------------------------------------------------------------------------------------------------------------------------------------------------------------------</font><br>
