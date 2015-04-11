@@ -34,7 +34,8 @@ if($usr eq "" or $name eq "" or $pwd eq ""){
 open (my $fh, "<", $file) or die "$file: $!";
 while(<$fh>) {
     chomp;
-    push @memlist, [ split / / ];
+    my @fields = split(/ /);
+    push @memlist, \@fields;
     if($usr eq $_[1]){
         $valid = 0;
     }
