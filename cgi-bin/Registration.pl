@@ -51,12 +51,12 @@ if ($valid == 1){
     }
     for (my $e=0; $e < @memlist; $e++){
     	for (my $p=0; $p < @{$memlist[$e]}; $p++){
-    		print "$memlist[$e][$p]";
+    		print $fh "$memlist[$e][$p]";
     		if($p == @{$memlist[$e]}-1){
-    	 		print $fh "\n"
+    	 		print $fh "\n";
     		}
     		else{
-    		print $fh " "
+    		print $fh " ";
     		}
     	}
     }
